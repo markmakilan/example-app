@@ -3,7 +3,7 @@
         <div class="h-12 flex items-center relative">
             <button class="absolute -right-2 w-4 h-4 bg-secondary hidden hover:bg-accent group-hover/toggle-button:block rounded-sm" x-on:click="toggleSidebar"></button>
         </div>
-        <div class="flex-1 overflow-y-auto">
+        <div class="flex-1 overflow-y-auto scrollable">
             <nav class="flex flex-col h-full text-sm">
                 <ul class="flex-1 space-y-1 my-2">
                     <li class="px-4">
