@@ -2,11 +2,9 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
@@ -18,7 +16,7 @@
     <div class="flex flex-col h-screen overflow-hidden divide-y">
         <livewire:pages.admin.layouts.topbar />
 
-        <div class="flex-1 flex flex-row divide-x" style="height: calc(100vh - 32px);">
+        <div class="flex-1 flex flex-row" style="height: calc(100vh - 32px);" x-bind:class="{ 'divide-x': sidebar }">
             <livewire:pages.admin.layouts.sidebar />
             
             <div class="flex-1 h-full">
