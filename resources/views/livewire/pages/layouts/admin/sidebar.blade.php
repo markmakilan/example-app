@@ -24,7 +24,7 @@
                             </div>
                             <span class="w-4 h-4 rounded-sm bg-secondary hidden group-hover/dropdown-menu-1:block"></span>
                         </div>
-                        <ul class="space-y-1" x-show="dropdown">
+                        <ul class="space-y-1" x-show="dropdown" x-collapse>
                             <li>
                                 <a href="#">
                                     <div class="flex items-center gap-1.5 rounded-md px-3 py-1.5 hover:bg-zinc-100">
@@ -53,7 +53,7 @@
                             </div>
                             <span class="w-4 h-4 rounded-sm bg-secondary hidden group-hover/dropdown-menu-2:block"></span>
                         </div>
-                        <ul class="space-y-1" x-show="dropdown">
+                        <ul class="space-y-1" x-show="dropdown" x-collapse>
                             <li x-data="{ dropdown: false, toggleDropdownMenu() { this.dropdown = !this.dropdown } }">
                                 <div class="flex items-center justify-between rounded-md cursor-pointer px-3 py-1.5 hover:bg-zinc-100 group/dropdown-menu-3" x-on:click="toggleDropdownMenu">
                                     <div class="flex items-center gap-1.5">
@@ -63,7 +63,7 @@
                                     
                                     <span class="w-4 h-4 rounded-sm bg-secondary hidden group-hover/dropdown-menu-3:block"></span>
                                 </div>
-                                <ul class="space-y-1" x-show="dropdown">
+                                <ul class="space-y-1" x-show="dropdown" x-collapse>
                                     <li>
                                         <a href="#">
                                             <div class="flex items-center gap-1.5 rounded-md px-3 py-1.5 hover:bg-zinc-100">
