@@ -5,5 +5,5 @@
             <h1 class="font-semibold">Dashboard</h1>
         </div>
     </div>
-    <div class="flex-1 px-4 py-2 overflow-y-auto scrollable"></div>
+    <div class="flex-1 px-4 py-2 overflow-y-auto scroller"></div>
 </div>

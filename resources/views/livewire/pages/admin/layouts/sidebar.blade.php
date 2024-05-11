@@ -5,7 +5,7 @@
                 <div class="w-4 h-4 bg-secondary rounded-sm group-hover/sidebar-toggle:bg-accent"></div>
             </button>
         </div>
-        <div class="flex-1 overflow-y-auto scrollable">
+        <div class="flex-1 overflow-y-auto scroller">
             <nav class="flex flex-col h-full text-sm">
                 <ul class="flex-1 space-y-1 my-2">
                     <li class="px-4">
