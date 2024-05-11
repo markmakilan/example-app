@@ -1,7 +1,7 @@
 <div class="w-64 h-full group/toggle-button" x-show="sidebar">
     <div class="flex flex-col h-full divide-y">
         <div class="h-12 flex items-center relative">
-            <button class="absolute group/sidebar-toggle -right-3 rounded-sm p-1 hover:bg-secondary group-hover/toggle-button:block" x-on:click="toggleSidebar">
+            <button class="absolute group/sidebar-toggle -right-2 rounded-sm p-1 -mx-1 hover:bg-secondary group-hover/toggle-button:block" x-on:click="toggleSidebar">
                 <div class="w-4 h-4 bg-secondary group-hover/sidebar-toggle:bg-accent"></div>
             </button>
         </div>
