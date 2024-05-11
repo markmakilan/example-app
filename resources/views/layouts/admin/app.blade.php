@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -10,16 +11,15 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    {{-- Vite --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body x-data="app">
     <div class="flex flex-col h-screen overflow-hidden divide-y">
-        <livewire:pages.layouts.admin.topbar />
+        <livewire:pages.admin.layouts.topbar />
 
         <div class="flex-1 flex flex-row divide-x" style="height: calc(100vh - 32px);">
-            <livewire:pages.layouts.admin.sidebar />
+            <livewire:pages.admin.layouts.sidebar />
             
             <div class="flex-1 h-full">
                 {{ $slot }}
