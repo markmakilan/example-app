@@ -1,7 +1,9 @@
 <div class="w-64 h-full group/toggle-button" x-show="sidebar">
     <div class="flex flex-col h-full divide-y">
         <div class="h-12 flex items-center relative">
-            <button class="absolute -right-2 w-4 h-4 bg-secondary hidden hover:bg-accent group-hover/toggle-button:block rounded-sm" x-on:click="toggleSidebar"></button>
+            <button class="absolute -right-3 rounded-sm p-1 hover:bg-secondary group-hover/toggle-button:block" x-on:click="toggleSidebar">
+                <div class="w-4 h-4 bg-accent"></div>
+            </button>
         </div>
         <div class="flex-1 overflow-y-auto scrollable">
             <nav class="flex flex-col h-full text-sm">
@@ -9,7 +11,7 @@
                     <li class="px-4">
                         <a href="#">
                             <div class="flex items-center gap-1.5 rounded-md px-3 py-1.5 hover:bg-zinc-100">
-                                <span class="w-6 h-6 rounded-sm bg-secondary"></span>
+                                <span class="w-4 h-4 rounded-sm bg-accent"></span>
                                 <span>Menu</span>
                             </div>
                         </a>
@@ -18,7 +20,7 @@
                         <div class="flex items-center justify-between rounded-md cursor-pointer px-3 py-1.5 hover:bg-zinc-100 group/dropdown-menu-1" x-on:click="toggleDropdownMenu">
                             <div class="flex items-center gap-1.5">
                                 <span
-                                    class="w-6 h-6 rounded-sm bg-secondary"
+                                    class="w-4 h-4 rounded-sm bg-accent"
                                 ></span>
                                 <span>Dropdown Menu 1</span>
                             </div>
@@ -28,7 +30,7 @@
                             <li>
                                 <a href="#">
                                     <div class="flex items-center gap-1.5 rounded-md px-3 py-1.5 hover:bg-zinc-100">
-                                        <span class="w-6 h-6 invisible"></span>
+                                        <span class="w-4 h-4 invisible"></span>
                                         <span>Sub Menu 1</span>
                                     </div>
                                 </a>
@@ -36,7 +38,7 @@
                             <li>
                                 <a href="#">
                                     <div class="flex items-center gap-1.5 rounded-md px-3 py-1.5 hover:bg-zinc-100">
-                                        <span class="w-6 h-6 invisible"></span>
+                                        <span class="w-4 h-4 invisible"></span>
                                         <span>Sub Menu 2</span>
                                     </div>
                                 </a>
@@ -47,7 +49,7 @@
                         <div class="flex items-center justify-between rounded-md cursor-pointer px-3 py-1.5 hover:bg-zinc-100 group/dropdown-menu-2" x-on:click="toggleDropdownMenu">
                             <div class="flex items-center gap-1.5">
                                 <span
-                                    class="w-6 h-6 rounded-sm bg-secondary"
+                                    class="w-4 h-4 rounded-sm bg-accent"
                                 ></span>
                                 <span>Dropdown Menu 2</span>
                             </div>
@@ -57,7 +59,7 @@
                             <li x-data="{ dropdown: false, toggleDropdownMenu() { this.dropdown = !this.dropdown } }">
                                 <div class="flex items-center justify-between rounded-md cursor-pointer px-3 py-1.5 hover:bg-zinc-100 group/dropdown-menu-3" x-on:click="toggleDropdownMenu">
                                     <div class="flex items-center gap-1.5">
-                                        <span class="w-6 h-6 invisible"></span>
+                                        <span class="w-4 h-4 invisible"></span>
                                         <span>Dropdown Sub Menu</span>
                                     </div>
                                     
@@ -67,7 +69,7 @@
                                     <li>
                                         <a href="#">
                                             <div class="flex items-center gap-1.5 rounded-md px-3 py-1.5 hover:bg-zinc-100">
-                                                <span class="w-6 h-6 invisible"></span>
+                                                <span class="w-4 h-4 invisible"></span>
                                                 <span>Sub Menu 1</span>
                                             </div>
                                         </a>
@@ -75,7 +77,7 @@
                                     <li>
                                         <a href="#">
                                             <div class="flex items-center gap-1.5 rounded-md px-3 py-1.5 hover:bg-zinc-100">
-                                                <span class="w-6 h-6 invisible"></span>
+                                                <span class="w-4 h-4 invisible"></span>
                                                 <span>Sub Menu 2</span>
                                             </div>
                                         </a>
@@ -90,7 +92,7 @@
                     <li class="px-4">
                         <a href="#">
                             <div class="flex items-center gap-1.5 rounded-md px-3 py-1.5 hover:bg-zinc-100">
-                                <span class="w-6 h-6 rounded-sm bg-secondary"></span>
+                                <span class="w-4 h-4 rounded-sm bg-accent"></span>
                                 <span>Menu</span>
                             </div>
                         </a>
