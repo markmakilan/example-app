@@ -10,7 +10,7 @@
                 <ul class="flex-1 space-y-1 my-2">
                     <li class="px-4">
                         <a href="#">
-                            <div class="flex items-center gap-1.5 rounded px-3 py-1.5 hover:bg-zinc-100">
+                            <div class="flex items-center gap-1.5 rounded px-3 py-1.5 bg-zinc-100 hover:bg-zinc-100">
                                 <span class="w-4 h-4 rounded-sm bg-secondary"></span>
                                 <span>Menu</span>
                             </div>
