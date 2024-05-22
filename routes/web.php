@@ -24,6 +24,7 @@ Route::middleware('guest')->group(function () {
 
 Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('/dashboard', App\Livewire\Pages\Admin\Dashboard\Index::class)->name('admin.dashboard');
+    Route::get('/user', App\Livewire\Pages\Admin\User\Index::class)->name('admin.user');
 });
 
 require __DIR__.'/auth.php';

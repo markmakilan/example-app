@@ -14,10 +14,10 @@
 
 <body x-data="app">
     <div class="flex flex-col h-screen overflow-hidden divide-y">
-        <livewire:layouts.admin.topbar />
+        <livewire:layouts.admin.topbar.index />
 
         <div class="flex-1 flex flex-row" style="height: calc(100vh - 32px);" x-bind:class="{ 'divide-x': sidebar }">
-            <livewire:layouts.admin.sidebar />
+            <livewire:layouts.admin.sidebar.index />
             
             <div class="flex-1 h-full">
                 {{ $slot }}
