@@ -26,8 +26,11 @@ RUN a2enmod rewrite
 # Copy the existing application directory contents
 COPY . /var/www/html
 
+# Set the default directory to /public
+RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|g' /etc/apache2/sites-available/000-default.conf
+
 # Set file permissions
-RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/public
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
@@ -35,8 +38,8 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Run Composer install
 RUN composer install --no-dev --optimize-autoloader
 
-# Expose port 8080
-EXPOSE 8080
+# Expose port 80
+EXPOSE 80
 
 # Start Apache in the foreground
 CMD ["apache2-foreground"]
